@@ -21,8 +21,8 @@ import model.MorningAfternoonEveningDecider;
  *
  * @author gcorcoran
  */
-@WebServlet(name = "Lab3Controller", urlPatterns = {"/Lab3Controller"})
-public class Lab3Controller extends HttpServlet {
+@WebServlet(name = "Lab4Controller", urlPatterns = {"/Lab4Controller"})
+public class Lab4Controller extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -46,7 +46,7 @@ public class Lab3Controller extends HttpServlet {
         request.setAttribute("name", name);
         request.setAttribute("message", message);
         
-        RequestDispatcher view = request.getRequestDispatcher("/lab3response.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("/lab4response.jsp");
         view.forward(request, response);
         
         
